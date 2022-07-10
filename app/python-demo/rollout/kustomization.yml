@@ -1,0 +1,19 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: myapp-test
+
+configurations:
+- rollout-transform.yaml
+
+images:
+- digest: sha256:8d0c0fb629bd982e96ad06fff718ae4ebffeaea523dd63322bf0ac72d208a2d1
+  name: python-demo
+  newName: harbor.shared.lab.pksdemo.net/tanzu/apps/python-demo
+- digest: sha256:c34f494eb47a222bd6e88c39cfaf1e56877afe9547a88b76710dac5edb1bbd9a
+  name: rollouts-demo
+  newName: harbor.shared.lab.pksdemo.net/tanzu/tbs/python-demo
+  
+resources:
+- python-demo-deploy.yaml
+- python-demo-rollout-service.yaml
