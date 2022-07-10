@@ -5,9 +5,6 @@ images:
 - digest: sha256:55d177a2cdc79fefdc99ebd220b91e2e5be542648f98e2e428433dd0e83ad509
   name: python-demo
   newName: harbor.shared.lab.pksdemo.net/tanzu/apps/python-demo
-- digest: sha256:c34f494eb47a222bd6e88c39cfaf1e56877afe9547a88b76710dac5edb1bbd9a
-  name: python-hello
-  newName: harbor.shared.lab.pksdemo.net/tanzu/tbs/python-demo
 resources:
 - python-demo-deploy.yaml
 - python-demo-svc.yaml

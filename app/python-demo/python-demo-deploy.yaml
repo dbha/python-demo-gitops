@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: python-demo
+  name: python-demo-deploy
+  namespace: myapp-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-demo
+  template:
+    metadata:
+      labels:
+        app: python-demo
+    spec:
+      containers:
+      - image: python-demo
+        imagePullPolicy: IfNotPresent
+        name:python-demo
+        
