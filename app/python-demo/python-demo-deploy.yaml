@@ -18,5 +18,5 @@ spec:
       containers:
       - image: python-demo
         imagePullPolicy: IfNotPresent
-        name:python-demo
+        name: python-demo
         
