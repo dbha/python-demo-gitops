@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: python-demo
-  name: python-demo-deploy
+  name: python-demo
   namespace: myapp-test
 spec:
   replicas: 1
