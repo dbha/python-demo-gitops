@@ -8,3 +8,4 @@ images:
 resources:
 - python-demo-deploy.yaml
 - python-demo-svc.yaml
+- python-demo-httpproxy.yaml
