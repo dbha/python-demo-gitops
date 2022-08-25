@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: demo
 images:
-- digest: sha256:71680501c6c5ac66d3e6ac13cfb596018c7bf98ee033c74c230b7c8b441a74c4
+- digest: sha256:fcd3050990ab54ef4ad65a46960ead0e6d33d68028b49034abb1492000997e74
   name: python-demo
   newName: harbor.shared.lab.pksdemo.net/tanzu/apps/python-demo
 resources:
